@@ -1,0 +1,204 @@
+/*----Yadira Esparza------*/ 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+  box-sizing: border-box;
+}
+header{
+  background-color: white; 
+  color: #007d7b;
+}
+nav{
+  display: flex;
+  justify-content: right;
+  padding-bottom: 30px;
+}
+nav ul{
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+}
+nav li{
+  display: inline; 
+}
+nav li a{
+  text-decoration: none;
+  padding: 14px 16px;
+  color: white; 
+}
+[href="#top"] {
+  position:fixed;
+  bottom:0px;
+  right:0px;
+  border-radius:10px 0 0px 0px;
+}
+main{
+  background-color: white; 
+}
+body{ 
+    background-color: #000000; 
+    width: 1310px;
+    margin: auto; 
+    padding: 0; 
+}
+section{
+  padding: 5px; 
+}
+section h2{
+  display: flex;
+  justify-content: center;
+}
+.gallery h2{
+  display: none; 
+}
+.gallery-txt{
+  margin: 0;
+  position: relative;
+  
+}
+.gallery{
+  display: grid;
+  grid-template-columns: auto auto auto; 
+  position: relative;
+  text-align: center;
+}
+.gallery figure{
+  padding: .5%;
+  margin: 5px; 
+}
+figcaption{
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#moab, #chile, #hawaii{
+  position: relative;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  color: white; 
+}
+
+#wyoming, #guatemala{
+  position: relative;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#italy{
+  position: relative;
+  top: 95%;
+  transform: translate(-50%, -50%);
+}
+
+#UK, #USA, #switzerland, #rocky{
+  position: relative;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#iran, #ireland{
+  position: relative;
+  top: 8%;
+  transform: translate(-50%, -50%);
+}
+
+form{
+  background-color: #000000; 
+  color: #FFFFFF; 
+}
+
+form h2, form p{
+  display: flex;
+  justify-content: center;
+}
+label{
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  top: -10px;
+}
+input{
+  width: 850px; 
+  margin-left: 220px; 
+}
+textarea{
+  width: 850px; 
+  margin-left: 220px;
+}
+button {
+  margin-left: 440px;
+  color: white;
+  background-color: #007D7B;
+  width: 420px;
+  border-radius: 5px;
+}
+
+::placeholder{
+  color: #007d7b; 
+}
+
+p {
+    font-size: 1.25em;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+nav a {
+    font-size: 1.5em;
+  }
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+main {
+   grid-area: main;  
+}
+img {
+  width: 100%;
+  height: auto;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: white; 
+}
+/*----------*/ 
+@media screen and (max-width: 880px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: auto auto; 
+        position: relative;
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+}
+/*----------*/ 
+@media screen and (max-width: 485px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: auto; 
+        position: relative;
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+}
